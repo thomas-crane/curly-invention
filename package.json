@@ -1,0 +1,30 @@
+{
+  "name": "curly-invention",
+  "version": "1.0.0",
+  "description": "TreeSitter and other language experiments",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "tsc -p .",
+    "lint": "xo src/",
+    "test": "echo todo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas-crane/curly-invention.git"
+  },
+  "keywords": [
+    "tree-sitter",
+    "compiler",
+    "language"
+  ],
+  "author": "Thomas Crane <thomasgcrane@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomas-crane/curly-invention/issues"
+  },
+  "homepage": "https://github.com/thomas-crane/curly-invention#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "xo": "^0.46.4"
+  }
+}
