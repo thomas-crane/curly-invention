@@ -6,17 +6,6 @@ module.exports = grammar({
 
     word: $ => $.identifier,
 
-    /* Patterns */
-    _pattern: $ => choice(
-      $.name_pattern,
-      $.tuple_pattern,
-    ),
-
-    name_pattern: $ => $.identifier,
-    tuple_pattern: $ => seq(
-      '(', $._pattern, repeat(seq(',', $._pattern)), ')',
-    ),
-
     /* Expressions. */
     _expression: $ => choice(
       $.identifier,
@@ -28,13 +17,20 @@ module.exports = grammar({
       $.fn_declaration,
       $.var_declaration,
     ),
-    
+
     fn_declaration: $ => seq(
       'fn',
       $.identifier,
+      $.param_list,
     ),
 
-    var_declaration: $ => seq('let', $._pattern, '=', $._expression),
+    param_list: $ => seq(
+      '(',
+      $.identifier, // TODO improve
+      ')'
+    ),
+
+    var_declaration: $ => seq('let', $.identifier, '=', $._expression),
 
     /* Primitives. */
     number: _ => /\d+(\.\d+)?/,
