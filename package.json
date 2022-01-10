@@ -1,10 +1,10 @@
 {
-  "name": "curly-invention",
+  "name": "f",
   "version": "1.0.0",
   "description": "TreeSitter and other language experiments",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomas-crane/curly-invention.git"
+    "url": "git+https://github.com/thomas-crane/f.git"
   },
   "keywords": [
     "tree-sitter",
@@ -14,9 +14,9 @@
   "author": "Thomas Crane <thomasgcrane@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomas-crane/curly-invention/issues"
+    "url": "https://github.com/thomas-crane/f/issues"
   },
-  "homepage": "https://github.com/thomas-crane/curly-invention#readme",
+  "homepage": "https://github.com/thomas-crane/f#readme",
   "workspaces": [
     "packages/*"
   ]
